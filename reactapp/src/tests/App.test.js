@@ -1,9 +1,9 @@
 import React from "react";
 import App from "../App";
-import {mount } from "enzyme";
+import { shallow, mount } from "enzyme";
 
 
-let wrapper;
+var wrapper;
 describe('Testing App Component', () => {
     test('testcase1', () => {
         wrapper = mount(<App />);
