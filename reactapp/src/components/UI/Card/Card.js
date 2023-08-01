@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
-
+import style from "../style.css"
 
 export const Card = ({key , question , correctAnswerMarkUpdate , attempt , options , answer }) => {
     const [dis,setDis] = useState(false);
