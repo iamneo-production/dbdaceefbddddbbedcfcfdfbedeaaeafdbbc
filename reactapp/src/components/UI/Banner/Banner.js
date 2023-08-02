@@ -1,7 +1,7 @@
 const Banner = ({ score }) => {
     return (
         <div>
-            You have answered {score} / 5 &nbsp;Correctly
+            You have answered {score} / 5 &nbsp;Correctly
         </div>
     )
 }

@@ -26,7 +26,7 @@ function App() {
     option1: "Blue", option2: "Red", option3: "Yellow", option4: "Green"
   }
   // Array of questions
-  const questions = [{ question: "What color are the leaves?", answer: "Green" }, { question: "What color is the sky?", answer: "Blue" }, { question: "What color is a banana?", answer: "Yellow" }, { question: "What color is a strawberry?", answer: "Red" }, { question: "What color is a watermelon?", answer: "Green" }];
+  const questions = [{ question: "What color are the leaves?", answer: "Green" }, { question: "What color is the sky?", answer: "Blue" }, { question: "What color is a banana?", answer: "Yellow" }, { question: "What color is a strawberry?", answer: "Red" }, { question: "What color is a watermelon?", answer: "Green" }];
 
   // Event handler to show the result of the Quiz
   const handleResult = () => {
@@ -37,13 +37,13 @@ function App() {
   }
 
   return (
-    <div className="flex justify-center mt-4 ">
+    <div className="flex justify-center mt-4 ">
       <div>
-        <div className="flex items-center justify-center space-x-4 mb-12">
+        <div className="flex items-center justify-center space-x-4 mb-12">
           <h1 className="text-3xl">Quizz App</h1>
-          <i className="">learn react</i>
+          <i className="">learn react</i>
         </div>
-        {start && <Button onClick={ handleStart} style={"bg-orange-300 px-10 py-2 rounded hover:bg-orange-400"}>Start Quiz</Button>   } 
+        {start && <Button onClick={ handleStart} style={"bg-orange-300 px-10 py-2 rounded hover:bg-orange-400"}>Start Quiz</Button>   } 
         {banner && <Banner score={attempt} />}
         {card && <div> {questions.map((q, index) => (
           <Card key={index} question={q.question} correctAnswerMarkUpdate={correctAnswerMarkUpdate} attempt={attempt} options={opt} answer={q.answer} setQsns={setqsnAttempt} qsn={qsnAttempt} setCard={setResult} qsnAttempt={qsnAttempt} />
