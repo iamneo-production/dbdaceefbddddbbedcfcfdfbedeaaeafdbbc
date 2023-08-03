@@ -1,35 +1,15 @@
-import { useState } from "react";
+import './Card.module.css';
 import Button from "../Button/Button";
-import styles from "./Card.module.css";
 
 const Card = (props) => {
-  const [disabled, setDisabled] = useState(false);
-
-  const getSelectedValue = (option) => {
-    setDisabled(true);
-    if (props.value.correctAnswer === option) {
-      props.setCountCorrectAnswers(props.countCorrectAnswers + 1);
-    }
-  };
-
-  return (
-    <div className={styles.cardContainer}>
-      <div className={styles.question}>{props.value.Question}</div>
-      <div className={styles.options}>
-        {props.value.options.map((option, index) => {
-          return (
-            <div key={index} onClick={() => getSelectedValue(option)}>
-              <Button
-                buttonText={option}
-                ButtonStyle={props.ButtonStyle}
-                disabled={disabled}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
+    return <div className="card" id={props.id}>
+        <h4>{props.question}</h4>
+        
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option1}>{props.options.option1}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option2}>{props.options.option2}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option3}>{props.options.option3}</Button>
+        <Button handler={props.attempt} disabledState={props.isDisabled} value={props.options.option4}>{props.options.option4}</Button>
+    </div>;
 };
 
 export default Card;

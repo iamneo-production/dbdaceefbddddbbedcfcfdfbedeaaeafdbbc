@@ -1,17 +1,5 @@
-import styles from "./Button.module.css";
-
 const Button = (props) => {
-  return (
-    <>
-      <button
-        className={styles.ButtonContainer}
-        style={props.ButtonStyle}
-        disabled={props.disabled}
-      >
-        {props.buttonText}
-      </button>
-    </>
-  );
+    return <button onClick={props.handler} disabled={props.disabledState} value={props.value}>{props.children}</button>;
 };
 
 export default Button;
