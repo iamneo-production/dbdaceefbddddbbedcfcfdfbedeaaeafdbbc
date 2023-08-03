@@ -1,49 +1,38 @@
-const questions=[
-    {
-        questionId : 1,
-        question : "Who is the father of our nation ?",
-        option1 : "Mahatma Gandhi",
-        option2 : "Jawaharlal Nehru",
-        option3 : "Donald Trump",
-        option4 : "Barrack Obama",
-        answer : "Mahatma Gandhi"
-    },
-    {
-        questionId : 2,
-        question : "What color is are the leaves ?",
-        option1 : "Blue",
-        option2 : "Red",
-        option3 : "Yellow",
-        option4 : "Green",
-        answer : "Green"
-    },
-    {
-        questionId : 3,
-        question : "What color is the sky ?",
-        option1 : "Blue",
-        option2 : "Red",
-        option3 : "Yellow",
-        option4 : "Green",
-        answer : "Blue"
-    },
-    {
-        questionId : 4,
-        question : "What color is the sky ?",
-        option1 : "Blue",
-        option2 : "Red",
-        option3 : "Yellow",
-        option4 : "Green",
-        answer : "Blue"
-    },
-    {
-        questionId : 5,
-        question : "What color is the fire ?",
-        option1 : "Blue",
-        option2 : "Red",
-        option3 : "Yellow",
-        option4 : "Green",
-        answer : "Yellow"
-    }
-]
+const QuizData = [{
+    Question: 'Who is the father of nation ?',
+    options: [
+        'Mahatma Gandhi', 'Jawaharlal Nehru', 'Donald Trump', 'Barrack Obama'
+    ],
+    correctAnswer: 'Mahatma Gandhi'
+},
+{
+    Question: 'What color is are the leaves ?',
+    options: [
+        'Blue', 'Red', 'Yellow', 'Green'
+    ],
+    correctAnswer: 'Green'
+},
+{
+    Question: 'What color is the sky ?',
+    options: [
+        'Blue', 'Red', 'Yellow', 'Green'
+    ],
+    correctAnswer: 'Blue'
+},
+{
+    Question: 'What color is the sky ?',
+    options: [
+        'Blue', 'Red', 'Yellow', 'Green'
+    ],
+    correctAnswer: 'Blue'
+},
+{
+    Question: 'What color is the fire ?',
+    options: [
+        'Blue', 'Red', 'Yellow', 'Green'
+    ],
+    correctAnswer: 'Red'
+}
 
-export default questions;
+]
+export default QuizData;
