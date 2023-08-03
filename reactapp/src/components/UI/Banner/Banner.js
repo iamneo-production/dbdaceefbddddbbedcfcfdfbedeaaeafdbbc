@@ -5,3 +5,4 @@ const Banner = ({ score }) => {
         </div>
     )
 }
+export default Banner;

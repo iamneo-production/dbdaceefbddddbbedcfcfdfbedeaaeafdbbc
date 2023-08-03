@@ -4,3 +4,4 @@ const Button = (props) => {
         <button onClick={onClick} disabled={marked} className={style} >{btnName}</button>
     )
 }
+export default Button;
