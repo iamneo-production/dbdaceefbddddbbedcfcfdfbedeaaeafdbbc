@@ -1,8 +1,12 @@
-const Banner = ({ score }) => {
-    return (
-        <div>
-            You have answered {score} / 5 &nbsp;Correctly
-        </div>
-    )
-}
+import styles from "./Banner.module.css";
+
+const Banner = ({ styleObject, text }) => {
+  console.log(styleObject);
+  return (
+    <div className={styles.BannerContainer} style={styleObject}>
+      {text}
+    </div>
+  );
+};
+
 export default Banner;

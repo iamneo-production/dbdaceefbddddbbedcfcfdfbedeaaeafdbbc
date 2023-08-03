@@ -1,7 +1,17 @@
+import styles from "./Button.module.css";
+
 const Button = (props) => {
-    const { btnName = props.children, onClick, marked, style } = props;
-    return (
-        <button onClick={onClick} disabled={marked} className={style} >{btnName}</button>
-    )
-}
+  return (
+    <>
+      <button
+        className={styles.ButtonContainer}
+        style={props.ButtonStyle}
+        disabled={props.disabled}
+      >
+        {props.buttonText}
+      </button>
+    </>
+  );
+};
+
 export default Button;
