@@ -3,7 +3,7 @@ import './App.css';
 import Button from "./components/UI/Button/Button.js"
 import Card from "./components/UI/Card/Card"
 import data from "./Data/Data.js"
-import Banner from "./components/UI/Banner/Banner"
+import Banner from "./components/UI/Banner/Banner.js"
 
 function App() {
   const [isQuizStarted, setisQuizStarted] = useState(false);

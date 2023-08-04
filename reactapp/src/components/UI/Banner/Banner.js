@@ -1,3 +1,4 @@
+import {useState} from "react";
 const Banner = ({ correctAnswered }) => {
     const [questionsCorrect] = useState(correctAnswered);
     return (
