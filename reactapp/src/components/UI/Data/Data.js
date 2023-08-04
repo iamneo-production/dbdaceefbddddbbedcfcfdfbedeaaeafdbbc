@@ -1,7 +1,7 @@
 const questions = [
     {
         questionId: 1,
-        question: "Who is the father of our nation?",
+        question: "Who is the father of our nation?",
         option1: "G",
         option2: "A",
         option3: "H",
@@ -10,7 +10,7 @@ const questions = [
     },
     {
         questionId: 2,
-        question: "What color is are the leaves ?",
+        question: "What color is are the leaves ?",
         option1: "Blue",
         option2: "Red",
         option3: "Yellow",
@@ -19,7 +19,7 @@ const questions = [
     },
     {
         questionId: 3,
-        question: "What color is are the leaves ?",
+        question: "What color is are the leaves ?",
         option1: "Blue",
         option2: "Red",
         option3: "Yellow",
@@ -28,7 +28,7 @@ const questions = [
     },
     {
         questionId: 4,
-        question: "What color is are the leaves ?",
+        question: "What color is are the leaves ?",
         option1: "Blue",
         option2: "Red",
         option3: "Yellow",
@@ -37,7 +37,7 @@ const questions = [
     },
     {
         questionId: 5,
-        question: "What color is are the leaves ?",
+        question: "What color is are the leaves ?",
         option1: "Blue",
         option2: "Red",
         option3: "Yellow",
