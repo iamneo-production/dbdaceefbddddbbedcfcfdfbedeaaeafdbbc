@@ -2,7 +2,7 @@ import { useState } from "react";
 import './App.css';
 import Button from "./components/UI/Button/Button.js"
 import Card from "./components/UI/Card/Card"
-import questions from "./Data/Data.js"
+import data from "./Data/Data.js"
 import Banner from "./components/UI/Banner/banner"
 
 function App() {
